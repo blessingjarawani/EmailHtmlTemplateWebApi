@@ -38,6 +38,7 @@ namespace EmailTemplate.Infrastructure.Shared.ProcessesHandler
                     };
                     var result = await Task.Run(() => _mailSenderService.Send(message, _mailconfig.Value));
                     request.SendingStatus = result.IsSuccess ? MessageStatus.Sent : MessageStatus.NotSent;
+                    return await base.Handle(request);
                 }
                 request.SendingStatus = MessageStatus.NotSent;
                 return BaseResponse.CreateFail("Invalid Request");
@@ -45,7 +46,7 @@ namespace EmailTemplate.Infrastructure.Shared.ProcessesHandler
             catch (Exception ex)
             {
                 request.SendingStatus = MessageStatus.NotSent;
-                return BaseResponse.CreateFail(ex.GetBaseException().Message);
+                return await base.Handle(request);
             }
 
         }
