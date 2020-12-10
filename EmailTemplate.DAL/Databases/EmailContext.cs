@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using EmailTemplate.DAL.Entities;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,6 +11,8 @@ namespace EmailTemplate.DAL.Databases
 {
     public class EmailContext : DbContext
     {
+        public virtual DbSet<Template> Template { get; set; }
+        public virtual DbSet<EmailHistory> EmailHistory { get; set; }
         public EmailContext(DbContextOptions<EmailContext> options) : base(options) { }
         public override Task<int> SaveChangesAsync(CancellationToken cancellationToken = default(CancellationToken))
         {

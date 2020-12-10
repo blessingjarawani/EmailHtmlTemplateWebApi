@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace EmailTemplate.DAL.Repositories
 {
-    public class BaseRepository<T> : IRepository<T> where T : BaseEntity
+    public class BaseRepository<T> : IBaseRepository<T> where T : BaseEntity
     {
         protected EmailContext db;
 

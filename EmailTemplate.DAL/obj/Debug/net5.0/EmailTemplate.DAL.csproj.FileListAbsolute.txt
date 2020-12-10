@@ -1,0 +1,15 @@
+C:\Users\bjar00\source\repos\EmailTemplate\EmailTemplate.DAL\bin\Debug\net5.0\EmailTemplate.DAL.deps.json
+C:\Users\bjar00\source\repos\EmailTemplate\EmailTemplate.DAL\bin\Debug\net5.0\EmailTemplate.DAL.runtimeconfig.json
+C:\Users\bjar00\source\repos\EmailTemplate\EmailTemplate.DAL\bin\Debug\net5.0\EmailTemplate.DAL.runtimeconfig.dev.json
+C:\Users\bjar00\source\repos\EmailTemplate\EmailTemplate.DAL\bin\Debug\net5.0\EmailTemplate.DAL.dll
+C:\Users\bjar00\source\repos\EmailTemplate\EmailTemplate.DAL\bin\Debug\net5.0\ref\EmailTemplate.DAL.dll
+C:\Users\bjar00\source\repos\EmailTemplate\EmailTemplate.DAL\bin\Debug\net5.0\EmailTemplate.DAL.pdb
+C:\Users\bjar00\source\repos\EmailTemplate\EmailTemplate.DAL\obj\Debug\net5.0\EmailTemplate.DAL.csprojAssemblyReference.cache
+C:\Users\bjar00\source\repos\EmailTemplate\EmailTemplate.DAL\obj\Debug\net5.0\EmailTemplate.DAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\bjar00\source\repos\EmailTemplate\EmailTemplate.DAL\obj\Debug\net5.0\EmailTemplate.DAL.AssemblyInfoInputs.cache
+C:\Users\bjar00\source\repos\EmailTemplate\EmailTemplate.DAL\obj\Debug\net5.0\EmailTemplate.DAL.AssemblyInfo.cs
+C:\Users\bjar00\source\repos\EmailTemplate\EmailTemplate.DAL\obj\Debug\net5.0\EmailTemplate.DAL.csproj.CoreCompileInputs.cache
+C:\Users\bjar00\source\repos\EmailTemplate\EmailTemplate.DAL\obj\Debug\net5.0\EmailTemplate.DAL.dll
+C:\Users\bjar00\source\repos\EmailTemplate\EmailTemplate.DAL\obj\Debug\net5.0\ref\EmailTemplate.DAL.dll
+C:\Users\bjar00\source\repos\EmailTemplate\EmailTemplate.DAL\obj\Debug\net5.0\EmailTemplate.DAL.pdb
+C:\Users\bjar00\source\repos\EmailTemplate\EmailTemplate.DAL\obj\Debug\net5.0\EmailTemplate.DAL.genruntimeconfig.cache

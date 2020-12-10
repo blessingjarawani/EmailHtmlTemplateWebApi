@@ -8,6 +8,6 @@ namespace EmailTemplate.Infrastructure.Shared.Responses
 {
     public interface IResponse <T> : IBaseResponse
     {
-        T Response { get; }
+        T Result { get; }
     }
 }

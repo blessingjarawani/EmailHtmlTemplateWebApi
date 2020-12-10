@@ -13,16 +13,16 @@ namespace EmailTemplate.DAL.UnitOfWork
 {
     public class UnitOfWork : IUnitOfWork
     {
-        private IRepository<EmailHistory> emailHistory;
-        private IRepository<Template> template;
+        private IBaseRepository<EmailHistory> emailHistory;
+        private IBaseRepository<Template> template;
         private readonly EmailContext context;
         public UnitOfWork(EmailContext emailContext)
         {
             context = emailContext;
         }
         public async Task<bool> SaveAsync() => await (context.SaveChangesAsync()) > 0;
-        public IRepository<EmailHistory> EmailHistory => emailHistory ?? new BaseRepository<EmailHistory>(context);
-        public IRepository<Template> Template => template ?? new BaseRepository<Template>(context);
+        public IBaseRepository<EmailHistory> EmailHistory => emailHistory ?? new BaseRepository<EmailHistory>(context);
+        public IBaseRepository<Template> Template => template ?? new BaseRepository<Template>(context);
 
 
     }

@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace EmailTemplate.DAL.Repositories.Abstractions
 {
-    public interface IRepository<T> where T : BaseEntity
+    public interface IBaseRepository<T> where T : BaseEntity
     {
         Task<IEnumerable<T>> GetAll();
         Task<T> Get(int id);

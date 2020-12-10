@@ -1,0 +1,11 @@
+C:\Users\bjar00\source\repos\EmailTemplate\EmailTemplate.BLL\bin\Debug\net5.0\EmailTemplate.BLL.deps.json
+C:\Users\bjar00\source\repos\EmailTemplate\EmailTemplate.BLL\bin\Debug\net5.0\EmailTemplate.BLL.dll
+C:\Users\bjar00\source\repos\EmailTemplate\EmailTemplate.BLL\bin\Debug\net5.0\ref\EmailTemplate.BLL.dll
+C:\Users\bjar00\source\repos\EmailTemplate\EmailTemplate.BLL\bin\Debug\net5.0\EmailTemplate.BLL.pdb
+C:\Users\bjar00\source\repos\EmailTemplate\EmailTemplate.BLL\obj\Debug\net5.0\EmailTemplate.BLL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\bjar00\source\repos\EmailTemplate\EmailTemplate.BLL\obj\Debug\net5.0\EmailTemplate.BLL.AssemblyInfoInputs.cache
+C:\Users\bjar00\source\repos\EmailTemplate\EmailTemplate.BLL\obj\Debug\net5.0\EmailTemplate.BLL.AssemblyInfo.cs
+C:\Users\bjar00\source\repos\EmailTemplate\EmailTemplate.BLL\obj\Debug\net5.0\EmailTemplate.BLL.csproj.CoreCompileInputs.cache
+C:\Users\bjar00\source\repos\EmailTemplate\EmailTemplate.BLL\obj\Debug\net5.0\EmailTemplate.BLL.dll
+C:\Users\bjar00\source\repos\EmailTemplate\EmailTemplate.BLL\obj\Debug\net5.0\ref\EmailTemplate.BLL.dll
+C:\Users\bjar00\source\repos\EmailTemplate\EmailTemplate.BLL\obj\Debug\net5.0\EmailTemplate.BLL.pdb

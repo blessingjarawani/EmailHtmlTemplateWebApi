@@ -10,8 +10,8 @@ namespace EmailTemplate.DAL.UnitOfWork.Abstractions
 {
     public interface IUnitOfWork
     {
-        IRepository<EmailHistory> EmailHistory { get; }
-        IRepository<Template> Template { get; }
+        IBaseRepository<EmailHistory> EmailHistory { get; }
+        IBaseRepository<Template> Template { get; }
         Task<bool> SaveAsync();
     }
 }

@@ -1,4 +1,8 @@
 using EmailTemplate.DAL.Databases;
+using EmailTemplate.DAL.Repositories;
+using EmailTemplate.DAL.Repositories.Abstractions;
+using EmailTemplate.DAL.UnitOfWork;
+using EmailTemplate.DAL.UnitOfWork.Abstractions;
 using EmailTemplate.Infrastructure.Shared.Responses;
 using MediatR;
 using Microsoft.AspNetCore.Builder;
@@ -38,6 +42,7 @@ namespace EmailTemplate.Api
         private void RegisterServices(IServiceCollection services)
         {
             services.AddMediatR(typeof(IBaseResponse).GetTypeInfo().Assembly);
+            services.AddTransient<IUnitOfWork, UnitOfWork>();
         }
         private void RegisterDbContexts(IServiceCollection services)
         {

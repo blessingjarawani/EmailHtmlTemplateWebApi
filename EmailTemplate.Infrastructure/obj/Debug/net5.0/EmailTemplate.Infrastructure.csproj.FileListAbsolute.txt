@@ -1,0 +1,15 @@
+C:\Users\bjar00\source\repos\EmailTemplate\EmailTemplate.Infrastructure\bin\Debug\net5.0\EmailTemplate.Infrastructure.deps.json
+C:\Users\bjar00\source\repos\EmailTemplate\EmailTemplate.Infrastructure\bin\Debug\net5.0\EmailTemplate.Infrastructure.dll
+C:\Users\bjar00\source\repos\EmailTemplate\EmailTemplate.Infrastructure\bin\Debug\net5.0\ref\EmailTemplate.Infrastructure.dll
+C:\Users\bjar00\source\repos\EmailTemplate\EmailTemplate.Infrastructure\bin\Debug\net5.0\EmailTemplate.Infrastructure.pdb
+C:\Users\bjar00\source\repos\EmailTemplate\EmailTemplate.Infrastructure\bin\Debug\net5.0\EmailTemplate.DAL.dll
+C:\Users\bjar00\source\repos\EmailTemplate\EmailTemplate.Infrastructure\bin\Debug\net5.0\EmailTemplate.DAL.pdb
+C:\Users\bjar00\source\repos\EmailTemplate\EmailTemplate.Infrastructure\obj\Debug\net5.0\EmailTemplate.Infrastructure.csprojAssemblyReference.cache
+C:\Users\bjar00\source\repos\EmailTemplate\EmailTemplate.Infrastructure\obj\Debug\net5.0\EmailTemplate.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\bjar00\source\repos\EmailTemplate\EmailTemplate.Infrastructure\obj\Debug\net5.0\EmailTemplate.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\bjar00\source\repos\EmailTemplate\EmailTemplate.Infrastructure\obj\Debug\net5.0\EmailTemplate.Infrastructure.AssemblyInfo.cs
+C:\Users\bjar00\source\repos\EmailTemplate\EmailTemplate.Infrastructure\obj\Debug\net5.0\EmailTemplate.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\bjar00\source\repos\EmailTemplate\EmailTemplate.Infrastructure\obj\Debug\net5.0\EmailTemplate.Infrastructure.csproj.CopyComplete
+C:\Users\bjar00\source\repos\EmailTemplate\EmailTemplate.Infrastructure\obj\Debug\net5.0\EmailTemplate.Infrastructure.dll
+C:\Users\bjar00\source\repos\EmailTemplate\EmailTemplate.Infrastructure\obj\Debug\net5.0\ref\EmailTemplate.Infrastructure.dll
+C:\Users\bjar00\source\repos\EmailTemplate\EmailTemplate.Infrastructure\obj\Debug\net5.0\EmailTemplate.Infrastructure.pdb
