@@ -8,7 +8,7 @@ using EmailTemplate.Infrastructure.Shared.Services.Abstracts;
 using Microsoft.Extensions.Options;
 using System;
 using System.Threading.Tasks;
-
+using Logging;
 namespace EmailTemplate.Infrastructure.Shared.ProcessesHandler
 {
     public class SendEmailHandler : BaseProcessHandler<IContext>
@@ -38,11 +38,13 @@ namespace EmailTemplate.Infrastructure.Shared.ProcessesHandler
                     return await base.Handle(request);
                 }
                 request.SendingStatus = MessageStatus.NotSent;
+                Log<SendEmailHandler>.CreateMessage("Invalid Request", Logging.MessageType.Info);
                 return BaseResponse.CreateFail("Invalid Request");
             }
             catch (Exception ex)
             {
                 request.SendingStatus = MessageStatus.NotSent;
+                Log<SendEmailHandler>.CreateMessage($"{ex.Message} Mail to {request.EmailAddress}" , Logging.MessageType.Error);
                 return await base.Handle(request);
             }
 

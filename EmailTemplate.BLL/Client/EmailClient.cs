@@ -6,6 +6,7 @@ using EmailTemplate.Infrastructure.Shared.ProcessesHandler;
 using EmailTemplate.Infrastructure.Shared.ProcessesHandler.Abstracts;
 using EmailTemplate.Infrastructure.Shared.Responses;
 using EmailTemplate.Infrastructure.Shared.Services.Abstracts;
+using Logging;
 using Microsoft.Extensions.Options;
 using System;
 using System.Collections.Generic;
@@ -51,13 +52,16 @@ namespace EmailTemplate.BLL.Client
                 var processResult = await handler.Handle(emailContext);
                 if (!processResult.IsSuccess)
                 {
+                    Log<EmailClient>.CreateMessage(processResult.Message, Logging.MessageType.Info);
                     return BaseResponse.CreateFail(processResult.Message);
                 }
                 return BaseResponse.CreateSuccess();
             }
             catch (Exception ex)
             {
+                Log<EmailClient>.CreateMessage(ex.Message, Logging.MessageType.Error);
                 return BaseResponse.CreateFail(ex.GetBaseException().Message);
+                
             }
         }
 

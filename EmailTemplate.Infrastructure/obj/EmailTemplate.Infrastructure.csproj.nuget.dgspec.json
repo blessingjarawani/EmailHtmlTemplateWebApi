@@ -26,7 +26,7 @@
           "net5.0"
         ],
         "sources": {
-          "https://api.nuget.org/v3/index.json": {}
+          "C:\\Users\\bjar00\\source\\repos\\EmailTemplate\\EmailTemplate.Api\\bin\\Debug": {}
         },
         "frameworks": {
           "net5.0": {
@@ -110,7 +110,7 @@
           "net5.0"
         ],
         "sources": {
-          "https://api.nuget.org/v3/index.json": {}
+          "C:\\Users\\bjar00\\source\\repos\\EmailTemplate\\EmailTemplate.Api\\bin\\Debug": {}
         },
         "frameworks": {
           "net5.0": {
@@ -132,6 +132,10 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "dependencies": {
+            "Logging": {
+              "target": "Package",
+              "version": "[1.0.0.133, )"
+            },
             "MediatR": {
               "target": "Package",
               "version": "[9.0.0, )"

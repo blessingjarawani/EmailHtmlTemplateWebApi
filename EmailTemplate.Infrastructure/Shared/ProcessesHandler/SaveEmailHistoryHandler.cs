@@ -1,9 +1,11 @@
-﻿using EmailTemplate.DAL.Entities;
+﻿using EmailTemplate.DAL.Dictionary;
+using EmailTemplate.DAL.Entities;
 using EmailTemplate.DAL.UnitOfWork;
 using EmailTemplate.DAL.UnitOfWork.Abstractions;
 using EmailTemplate.Infrastructure.Shared.Context;
 using EmailTemplate.Infrastructure.Shared.ProcessesHandler.Abstracts;
 using EmailTemplate.Infrastructure.Shared.Responses;
+using Logging;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -32,9 +34,14 @@ namespace EmailTemplate.Infrastructure.Shared.ProcessesHandler
                     Template = request.Template,
                 };
                 await _unitOfWork.EmailHistory.Create(emailHistory);
-                return await _unitOfWork.SaveAsync() ?
-                     await base.Handle(request) : BaseResponse.CreateFail("Failed To Save");
+                var saveResult = await _unitOfWork.SaveAsync();
+                if (!saveResult)
+                    Log<SaveEmailHistoryHandler>.CreateMessage("Failed To Save top Db", Logging.MessageType.Error);
+
+                return request.SendingStatus == MessageStatus.Sent ?
+                    await base.Handle(request) : BaseResponse.CreateFail("Email was not Sent");
             }
+            Log<SaveEmailHistoryHandler>.CreateMessage("Invalid Request", Logging.MessageType.Info);
             return BaseResponse.CreateFail("Invalid Request");
         }
     }

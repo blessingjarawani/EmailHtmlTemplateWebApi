@@ -3,6 +3,7 @@ using EmailTemplate.Infrastructure.DTO;
 using EmailTemplate.Infrastructure.Shared.Configurations;
 using EmailTemplate.Infrastructure.Shared.Responses;
 using EmailTemplate.Infrastructure.Shared.Services.Abstracts;
+using Logging;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -26,9 +27,10 @@ namespace EmailTemplate.Infrastructure.Shared.Services
                     return BaseResponse.CreateSuccess();
                 }
             }
-            catch (Exception e)
+            catch (Exception ex)
             {
-                return BaseResponse.CreateFail($"{MessageStatus.NotSent}  {e.GetBaseException().Message}");
+                Log<MailSenderService>.CreateMessage(ex.Message, Logging.MessageType.Error);
+                return BaseResponse.CreateFail($"{MessageStatus.NotSent}  {ex.GetBaseException().Message}");
             }
         }
 
