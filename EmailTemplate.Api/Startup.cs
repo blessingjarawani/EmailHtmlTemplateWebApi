@@ -5,6 +5,8 @@ using EmailTemplate.DAL.UnitOfWork;
 using EmailTemplate.DAL.UnitOfWork.Abstractions;
 using EmailTemplate.Infrastructure.Shared.Configurations;
 using EmailTemplate.Infrastructure.Shared.Responses;
+using EmailTemplate.Infrastructure.Shared.Services;
+using EmailTemplate.Infrastructure.Shared.Services.Abstracts;
 using MediatR;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -49,6 +51,7 @@ namespace EmailTemplate.Api
         {
             services.AddMediatR(typeof(IBaseResponse).GetTypeInfo().Assembly);
             services.AddTransient<IUnitOfWork, UnitOfWork>();
+            services.AddTransient<IMailSenderService, MailSenderService>();
         }
         private void RegisterDbContexts(IServiceCollection services)
         {
