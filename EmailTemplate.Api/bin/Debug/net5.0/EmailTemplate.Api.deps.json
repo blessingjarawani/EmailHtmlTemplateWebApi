@@ -25,6 +25,7 @@
     ".NETCoreApp,Version=v5.0": {
       "EmailTemplate.Api/1.0.0": {
         "dependencies": {
+          "EmailTemplate.BLL": "1.0.0",
           "EmailTemplate.DAL": "1.0.0",
           "EmailTemplate.Infrastructure": "1.0.0",
           "Microsoft.EntityFrameworkCore": "5.0.1",
@@ -712,6 +713,17 @@
           "lib/netstandard1.3/Newtonsoft.Json.dll": {}
         }
       },
+      "NLog/4.7.6": {
+        "runtime": {
+          "lib/netstandard2.0/NLog.dll": {
+            "assemblyVersion": "4.0.0.0",
+            "fileVersion": "4.7.6.12219"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/NLog.dll": {}
+        }
+      },
       "runtime.native.System/4.3.0": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "3.1.0",
@@ -1337,6 +1349,18 @@
           "System.Xml.XmlDocument": "4.3.0"
         }
       },
+      "EmailTemplate.BLL/1.0.0": {
+        "dependencies": {
+          "EmailTemplate.Infrastructure": "1.0.0",
+          "NLog": "4.7.6"
+        },
+        "runtime": {
+          "EmailTemplate.BLL.dll": {}
+        },
+        "compile": {
+          "EmailTemplate.BLL.dll": {}
+        }
+      },
       "EmailTemplate.DAL/1.0.0": {
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "5.0.1",
@@ -1354,7 +1378,8 @@
         "dependencies": {
           "EmailTemplate.DAL": "1.0.0",
           "MediatR": "9.0.0",
-          "MediatR.Extensions.Microsoft.DependencyInjection": "9.0.0"
+          "MediatR.Extensions.Microsoft.DependencyInjection": "9.0.0",
+          "NLog": "4.7.6"
         },
         "runtime": {
           "EmailTemplate.Infrastructure.dll": {}
@@ -3294,6 +3319,13 @@
       "path": "newtonsoft.json/10.0.1",
       "hashPath": "newtonsoft.json.10.0.1.nupkg.sha512"
     },
+    "NLog/4.7.6": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-mVYfNsZk6HY26/S/T3vVd2RS/1GySaeNh6bjP8uE7mKAdTENlRycQr7S4FC+I//QflXl/D/HEEugE47BDxQ5wA==",
+      "path": "nlog/4.7.6",
+      "hashPath": "nlog.4.7.6.nupkg.sha512"
+    },
     "runtime.native.System/4.3.0": {
       "type": "package",
       "serviceable": true,
@@ -3755,6 +3787,11 @@
       "sha512": "sha512-VShQJhOxgD/5M2Z1IWm1vMaSqlbjo1zdFf8H7Ahte6bTvSUhUko/gDpAVVhGgGgTDeue4QyNg1fu1Zz2GKSEuQ==",
       "path": "system.xml.xmlserializer/4.3.0",
       "hashPath": "system.xml.xmlserializer.4.3.0.nupkg.sha512"
+    },
+    "EmailTemplate.BLL/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     },
     "EmailTemplate.DAL/1.0.0": {
       "type": "project",

@@ -5,12 +5,11 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Clients\" />
-    <Folder Include="Processes\" />
+    <PackageReference Include="NLog" Version="4.7.6" />
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="NLog" Version="4.7.6" />
+    <ProjectReference Include="..\EmailTemplate.Infrastructure\EmailTemplate.Infrastructure.csproj" />
   </ItemGroup>
 
 </Project>

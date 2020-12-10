@@ -59,3 +59,6 @@ C:\Users\bjar00\source\repos\EmailTemplate\EmailTemplate.Api\obj\Debug\net5.0\Em
 C:\Users\bjar00\source\repos\EmailTemplate\EmailTemplate.Api\obj\Debug\net5.0\ref\EmailTemplate.Api.dll
 C:\Users\bjar00\source\repos\EmailTemplate\EmailTemplate.Api\obj\Debug\net5.0\EmailTemplate.Api.pdb
 C:\Users\bjar00\source\repos\EmailTemplate\EmailTemplate.Api\obj\Debug\net5.0\EmailTemplate.Api.genruntimeconfig.cache
+C:\Users\bjar00\source\repos\EmailTemplate\EmailTemplate.Api\bin\Debug\net5.0\NLog.dll
+C:\Users\bjar00\source\repos\EmailTemplate\EmailTemplate.Api\bin\Debug\net5.0\EmailTemplate.BLL.dll
+C:\Users\bjar00\source\repos\EmailTemplate\EmailTemplate.Api\bin\Debug\net5.0\EmailTemplate.BLL.pdb
