@@ -11,7 +11,7 @@ namespace EmailTemplate.DAL.Entities
     {
         [Key]
         public int Id { get; set; }
-        public bool IsActive { get; set; }
+        public bool IsActive { get; set; } = true;
         public DateTime CreatedDate { get; set; }
         public DateTime? UpdatedDate { get; set; }
         [StringLength(50)]

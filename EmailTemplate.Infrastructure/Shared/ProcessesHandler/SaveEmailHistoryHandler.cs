@@ -26,10 +26,10 @@ namespace EmailTemplate.Infrastructure.Shared.ProcessesHandler
             {
                 var emailHistory = new EmailHistory
                 {
-                    Template = new Template { Id = request.Template.Id },
                     Name = request.Name,
                     Status = request.SendingStatus,
                     Email = request.EmailAddress,
+                    Template = request.Template,
                 };
                 await _unitOfWork.EmailHistory.Create(emailHistory);
                 return await _unitOfWork.SaveAsync() ?

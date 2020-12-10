@@ -16,6 +16,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Microsoft.Net.Http.Headers;
 using System.Reflection;
 
 
@@ -37,6 +38,14 @@ namespace EmailTemplate.Api
             RegisterServices(services);
             RegisterOptions(services);
             services.AddControllers();
+            services.AddCors(options =>
+            {
+                options.AddPolicy("AllowSpecificOrigin",
+                    builder => builder
+                        .WithOrigins(new string[] { "http://localhost:54501/" })
+                        .WithHeaders(HeaderNames.ContentType, "application/json")
+                        .WithHeaders(HeaderNames.ContentType, "x-custom-header"));
+            });
         }
 
         private void RegisterOptions(IServiceCollection services)

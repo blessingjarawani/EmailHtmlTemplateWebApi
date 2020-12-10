@@ -28,10 +28,10 @@ namespace EmailTemplate.Infrastructure.Shared.ProcessesHandler
                 {
                     var message = new EmailDTO
                     {
-                        Body = request.Body.Replace("[Name]", request.Name),
+                        Body = request.Template.Subject.Replace("[Name]", request.Name),
                         From = _mailconfig.Value.MailFrom,
                         To = request.EmailAddress,
-                        Topic = request.Body
+                        Topic = request.Template.Subject
                     };
                     var result = await Task.Run(() => _mailSenderService.Send(message, _mailconfig.Value));
                     request.SendingStatus = result.IsSuccess ? MessageStatus.Sent : MessageStatus.NotSent;

@@ -18,7 +18,7 @@ namespace EmailTemplate.Api.Controllers
         public EmailController(IEmailClient emailClient) => _emailClient = emailClient;
 
         [HttpPost("[action]")]
-        public async Task<BaseResponse> SendEmail(SendEmailCommand sendEmailCommand)
+        public async Task<BaseResponse> SendEmail([FromBody]SendEmailCommand sendEmailCommand)
         {
             if (sendEmailCommand != null)
             {

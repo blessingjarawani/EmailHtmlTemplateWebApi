@@ -29,7 +29,7 @@ namespace EmailTemplate.Infrastructure.Shared.ProcessesHandler
                     var template = await _unitOfWork.Template.FindFirst(x => x.Id == request.TemplateId);
                     if (template != null)
                     {
-                        request.Template = TemplateDTO.Create(template);
+                        request.Template = template;
                         return await base.Handle(request);
                     }
                     request.SendingStatus = MessageStatus.TemplateNotFound;
