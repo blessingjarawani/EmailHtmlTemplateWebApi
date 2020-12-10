@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "EPLPHrLKKn+goU1JORTGbyq4uK64CaWTS2mnWEg9/tOptT9/vawT7+4M5EDf+SXHWQgz5r9DVIDBw5EqJRO7Ew==",
+  "dgSpecHash": "CTmy9n9Hq9gEYrA+jSeXb0WXRqhvilA9Fsr8XNa/5/vvlkCrQa995BOSKp/Tg/Xa74Vb4BN4cRbQYnFjiH9xEA==",
   "success": true,
   "projectFilePath": "C:\\Users\\bjar00\\source\\repos\\EmailTemplate\\EmailTemplate.BLL\\EmailTemplate.BLL.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\bjar00\\.nuget\\packages\\nlog\\4.7.6\\nlog.4.7.6.nupkg.sha512"
+  ],
   "logs": []
 }

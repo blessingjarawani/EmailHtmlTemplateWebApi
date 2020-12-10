@@ -3,6 +3,7 @@ using EmailTemplate.DAL.Repositories;
 using EmailTemplate.DAL.Repositories.Abstractions;
 using EmailTemplate.DAL.UnitOfWork;
 using EmailTemplate.DAL.UnitOfWork.Abstractions;
+using EmailTemplate.Infrastructure.Shared.Configurations;
 using EmailTemplate.Infrastructure.Shared.Responses;
 using MediatR;
 using Microsoft.AspNetCore.Builder;
@@ -36,9 +37,14 @@ namespace EmailTemplate.Api
         {
             RegisterDbContexts(services);
             RegisterServices(services);
+            RegisterOptions(services);
             services.AddControllers();
         }
 
+        private void RegisterOptions(IServiceCollection services)
+        {
+            services.Configure<MailClientConfig>(Configuration.GetSection("MailClientConfig"));
+        }
         private void RegisterServices(IServiceCollection services)
         {
             services.AddMediatR(typeof(IBaseResponse).GetTypeInfo().Assembly);
