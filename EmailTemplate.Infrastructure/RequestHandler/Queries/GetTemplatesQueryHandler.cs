@@ -10,7 +10,7 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace EmailTemplate.Infrastructure.Requests.Queries
+namespace EmailTemplate.Infrastructure.RequestHandler.Queries
 {
     public class GetTemplatesQueryHandler : IRequestHandler<GetTemplatesQuery, IResponse<IEnumerable<TemplateDTO>>>
     {

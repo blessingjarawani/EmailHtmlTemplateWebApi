@@ -1,6 +1,6 @@
 ﻿using EmailTemplate.DAL.Entities;
 using EmailTemplate.DAL.UnitOfWork.Abstractions;
-using EmailTemplate.Infrastructure.RequestHandlers.Commands;
+using EmailTemplate.Infrastructure.Request.Commands;
 using EmailTemplate.Infrastructure.Shared.Responses;
 using MediatR;
 using System;
@@ -10,7 +10,7 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace EmailTemplate.Infrastructure.Requests.CommandHandlers
+namespace EmailTemplate.Infrastructure.RequestHandler.CommandHandlers
 {
     public class AddTemplateQueryHandler : IRequestHandler<AddTemplateCommand, IBaseResponse>
     {

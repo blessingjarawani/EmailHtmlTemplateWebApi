@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace EmailTemplate.Infrastructure.RequestHandlers.QueryHandlers
+namespace EmailTemplate.Infrastructure.Request.QueryHandlers
 {
     public class GetTemplatesQuery : IRequest<IResponse<IEnumerable<TemplateDTO>>>
     {

@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace EmailTemplate.Infrastructure.RequestHandlers.Commands
+namespace EmailTemplate.Infrastructure.Request.Commands
 {
     public class EditTemplateCommand : IRequest<IBaseResponse>
     {
