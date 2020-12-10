@@ -1,6 +1,6 @@
 ﻿using EmailTemplate.DAL.DTO;
 using EmailTemplate.DAL.UnitOfWork.Abstractions;
-using EmailTemplate.Infrastructure.RequestHandlers.QueryHandlers;
+using EmailTemplate.Infrastructure.Request.QueryHandlers;
 using EmailTemplate.Infrastructure.Shared.Responses;
 using MediatR;
 using System;

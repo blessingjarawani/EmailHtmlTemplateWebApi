@@ -24,7 +24,7 @@ namespace EmailTemplate.Infrastructure.RequestHandler.CommandHandlers
         {
             try
             {
-                if (request == null || !request.IsValid)
+                if (request == null || !request.IsValid.HasValue || !request.IsValid.Value)
                     return BaseResponse.CreateFail("Invalid Parameters");
                 var template = new Template { Body = request.Body, Subject = request.Body };
                 await _unitOfWork.Template.Create(template);

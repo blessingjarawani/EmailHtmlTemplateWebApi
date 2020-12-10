@@ -12,7 +12,7 @@ namespace EmailTemplate.Infrastructure.Request.Commands
     {
         public string Body { get; set; }
         public string Subject { get; set; }
-        public bool IsValid => !String.IsNullOrWhiteSpace(Body)
+        public bool ? IsValid => !String.IsNullOrWhiteSpace(Body)
                                && !String.IsNullOrWhiteSpace(Subject);
     }
 }

@@ -18,24 +18,20 @@ namespace EmailTemplate.Api.Controllers
         private readonly IMediator _mediator;
         public TemplatesController(IMediator mediator) => _mediator = mediator;
 
-        [HttpGet]
-        [Route("GetTemplate")]
+        [HttpGet("[action]")]
         public async Task<IResponse<IEnumerable<TemplateDTO>>> Get([FromBody] GetTemplatesQuery query)
              => await _mediator.Send(query);
 
-        [HttpPost]
-        [Route("AddTemplate")]
-        public async Task<IBaseResponse> Post([FromBody] AddTemplateCommand query)
+        [HttpPost("[action]")]
+        public async Task<IBaseResponse> Add([FromBody] AddTemplateCommand query)
              => await _mediator.Send(query);
 
-        [HttpPut]
-        [Route("EditTemplate")]
-        public async Task<IBaseResponse> Put([FromBody] EditTemplateCommand query)
+        [HttpPut("[action]")]
+        public async Task<IBaseResponse> Update([FromBody] EditTemplateCommand query)
             => await _mediator.Send(query);
 
-        [HttpDelete]
-        [Route("DeleteTemplate")]
-        public async Task<IBaseResponse> Delete([FromBody] DeleteTemplateCommand query)
+        [HttpDelete("[action]")]
+        public async Task<IBaseResponse> Remove([FromBody] DeleteTemplateCommand query)
             => await _mediator.Send(query);
     }
 }
