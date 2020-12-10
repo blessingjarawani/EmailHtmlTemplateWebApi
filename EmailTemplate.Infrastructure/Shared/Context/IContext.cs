@@ -1,4 +1,5 @@
-﻿using System;
+﻿using EmailTemplate.DAL.Dictionary;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -12,6 +13,7 @@ namespace EmailTemplate.Infrastructure.Shared.Context
         public string EmailAddress { get; set; }
         public string Name { get; set; }
         public string Body { get; set; }
+        public MessageStatus SendingStatus { get; set; }
 
     }
 }
