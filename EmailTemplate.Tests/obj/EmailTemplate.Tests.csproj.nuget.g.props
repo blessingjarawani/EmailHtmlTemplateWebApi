@@ -26,6 +26,6 @@
   </ImportGroup>
   <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
     <Pkgxunit_analyzers Condition=" '$(Pkgxunit_analyzers)' == '' ">C:\Users\bjar00\.nuget\packages\xunit.analyzers\0.10.0</Pkgxunit_analyzers>
-    <PkgNLog_Config Condition=" '$(PkgNLog_Config)' == '' ">C:\Users\bjar00\.nuget\packages\nlog.config\4.2.3</PkgNLog_Config>
+    <PkgNLog_Config Condition=" '$(PkgNLog_Config)' == '' ">C:\Users\bjar00\.nuget\packages\nlog.config\4.7.6</PkgNLog_Config>
   </PropertyGroup>
 </Project>

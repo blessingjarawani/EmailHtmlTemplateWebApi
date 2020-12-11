@@ -74,6 +74,18 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[5.0.1, )"
+            },
+            "NLog": {
+              "target": "Package",
+              "version": "[4.7.6, )"
+            },
+            "NLog.Config": {
+              "target": "Package",
+              "version": "[4.7.6, )"
+            },
+            "NLog.Web.AspNetCore": {
+              "target": "Package",
+              "version": "[4.9.3, )"
             }
           },
           "imports": [
@@ -314,6 +326,10 @@
               "version": "[9.0.0, )"
             },
             "NLog": {
+              "target": "Package",
+              "version": "[4.7.6, )"
+            },
+            "NLog.Config": {
               "target": "Package",
               "version": "[4.7.6, )"
             }

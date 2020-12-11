@@ -28,7 +28,7 @@ namespace EmailTemplate.Infrastructure.Shared.ProcessesHandler
                 {
                     var message = new EmailDTO
                     {
-                        Body = request.Template.Subject.Replace("[Name]", request.Name),
+                        Body = request.Template.Body.Replace("[Name]", request.Name),
                         From = _mailconfig.Value.MailFrom,
                         To = request.EmailAddress,
                         Topic = request.Template.Subject

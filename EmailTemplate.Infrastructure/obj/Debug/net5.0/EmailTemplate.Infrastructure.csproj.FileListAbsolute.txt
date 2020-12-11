@@ -13,3 +13,4 @@ C:\Users\bjar00\source\repos\EmailTemplate\EmailTemplate.Infrastructure\obj\Debu
 C:\Users\bjar00\source\repos\EmailTemplate\EmailTemplate.Infrastructure\obj\Debug\net5.0\EmailTemplate.Infrastructure.dll
 C:\Users\bjar00\source\repos\EmailTemplate\EmailTemplate.Infrastructure\obj\Debug\net5.0\ref\EmailTemplate.Infrastructure.dll
 C:\Users\bjar00\source\repos\EmailTemplate\EmailTemplate.Infrastructure\obj\Debug\net5.0\EmailTemplate.Infrastructure.pdb
+C:\Users\bjar00\source\repos\EmailTemplate\EmailTemplate.Infrastructure\bin\Debug\net5.0\NLog.config

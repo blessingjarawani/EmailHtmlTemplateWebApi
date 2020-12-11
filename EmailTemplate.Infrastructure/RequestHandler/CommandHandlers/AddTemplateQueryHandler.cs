@@ -33,7 +33,7 @@ namespace EmailTemplate.Infrastructure.RequestHandler.CommandHandlers
             }
             catch (Exception ex)
             {
-                // logger here
+                Logging.Log<AddTemplateQueryHandler>.CreateMessage(ex);
                 return BaseResponse.CreateFail(ex.GetBaseException().Message);
             }
         }

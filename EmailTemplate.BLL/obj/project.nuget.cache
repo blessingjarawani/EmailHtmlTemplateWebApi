@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "Z7oU7cmMDkDxxth4e1WA2MjWs6HKDnHOdprVBwHIsjQ7jnzwpnSSZjA+Mqa6HzvFnzQ8flH5mV7ctTOJsFH4CQ==",
+  "dgSpecHash": "cJ50iAkpOOCL0Y2RGWfK/Fso1ozgrXoowN1WBc1Kuk2ZIHbJiqTvqAX6YWeQ7FlHbgLMNdVxL85SN+hAbtdLjw==",
   "success": true,
   "projectFilePath": "C:\\Users\\bjar00\\source\\repos\\EmailTemplate\\EmailTemplate.BLL\\EmailTemplate.BLL.csproj",
   "expectedPackageFiles": [
@@ -37,8 +37,8 @@
     "C:\\Users\\bjar00\\.nuget\\packages\\microsoft.win32.systemevents\\4.7.0\\microsoft.win32.systemevents.4.7.0.nupkg.sha512",
     "C:\\Users\\bjar00\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
     "C:\\Users\\bjar00\\.nuget\\packages\\nlog\\4.7.6\\nlog.4.7.6.nupkg.sha512",
-    "C:\\Users\\bjar00\\.nuget\\packages\\nlog.config\\4.2.3\\nlog.config.4.2.3.nupkg.sha512",
-    "C:\\Users\\bjar00\\.nuget\\packages\\nlog.schema\\4.0.0\\nlog.schema.4.0.0.nupkg.sha512",
+    "C:\\Users\\bjar00\\.nuget\\packages\\nlog.config\\4.7.6\\nlog.config.4.7.6.nupkg.sha512",
+    "C:\\Users\\bjar00\\.nuget\\packages\\nlog.schema\\4.7.6\\nlog.schema.4.7.6.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\runtime.native.system\\4.3.0\\runtime.native.system.4.3.0.nupkg.sha512",
     "C:\\Users\\bjar00\\.nuget\\packages\\system.collections\\4.3.0\\system.collections.4.3.0.nupkg.sha512",
     "C:\\Users\\bjar00\\.nuget\\packages\\system.collections.concurrent\\4.3.0\\system.collections.concurrent.4.3.0.nupkg.sha512",

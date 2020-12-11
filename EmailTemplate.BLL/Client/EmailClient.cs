@@ -55,6 +55,7 @@ namespace EmailTemplate.BLL.Client
                     Log<EmailClient>.CreateMessage(processResult.Message, Logging.MessageType.Info);
                     return BaseResponse.CreateFail(processResult.Message);
                 }
+                Logging.Log<EmailClient>.CreateMessage($"{emailContext.EmailAddress} : Sent ", MessageType.Info);
                 return BaseResponse.CreateSuccess();
             }
             catch (Exception ex)

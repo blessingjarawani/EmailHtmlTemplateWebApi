@@ -15,3 +15,4 @@ C:\Users\bjar00\source\repos\EmailTemplate\EmailTemplate.BLL\bin\Debug\net5.0\Em
 C:\Users\bjar00\source\repos\EmailTemplate\EmailTemplate.BLL\bin\Debug\net5.0\EmailTemplate.DAL.pdb
 C:\Users\bjar00\source\repos\EmailTemplate\EmailTemplate.BLL\obj\Debug\net5.0\EmailTemplate.BLL.csprojAssemblyReference.cache
 C:\Users\bjar00\source\repos\EmailTemplate\EmailTemplate.BLL\obj\Debug\net5.0\EmailTemplate.BLL.csproj.CopyComplete
+C:\Users\bjar00\source\repos\EmailTemplate\EmailTemplate.BLL\bin\Debug\net5.0\NLog.config

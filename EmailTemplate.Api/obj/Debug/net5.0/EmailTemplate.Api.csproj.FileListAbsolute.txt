@@ -64,3 +64,6 @@ C:\Users\bjar00\source\repos\EmailTemplate\EmailTemplate.Api\bin\Debug\net5.0\Em
 C:\Users\bjar00\source\repos\EmailTemplate\EmailTemplate.Api\bin\Debug\net5.0\EmailTemplate.BLL.pdb
 C:\Users\bjar00\source\repos\EmailTemplate\EmailTemplate.Api\bin\Debug\net5.0\AutoMapper.dll
 C:\Users\bjar00\source\repos\EmailTemplate\EmailTemplate.Api\bin\Debug\net5.0\Logging.dll
+C:\Users\bjar00\source\repos\EmailTemplate\EmailTemplate.Api\bin\Debug\net5.0\NLog.config
+C:\Users\bjar00\source\repos\EmailTemplate\EmailTemplate.Api\bin\Debug\net5.0\NLog.Extensions.Logging.dll
+C:\Users\bjar00\source\repos\EmailTemplate\EmailTemplate.Api\bin\Debug\net5.0\NLog.Web.AspNetCore.dll
