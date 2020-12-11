@@ -1,6 +1,6 @@
 ﻿using EmailTemplate.DAL.DTO;
 using EmailTemplate.Infrastructure.Request.Commands;
-using EmailTemplate.Infrastructure.Request.QueryHandlers;
+using EmailTemplate.Infrastructure.Request.Queries;
 using EmailTemplate.Infrastructure.Shared.Responses;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;

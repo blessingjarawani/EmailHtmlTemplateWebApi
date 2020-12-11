@@ -32,6 +32,30 @@
           "lib/netstandard1.5/Castle.Core.dll": {}
         }
       },
+      "FakeItEasy/6.2.1": {
+        "type": "package",
+        "dependencies": {
+          "Castle.Core": "4.3.1"
+        },
+        "compile": {
+          "lib/netstandard2.1/FakeItEasy.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.1/FakeItEasy.dll": {}
+        }
+      },
+      "FluentAssertions/5.10.3": {
+        "type": "package",
+        "dependencies": {
+          "System.Configuration.ConfigurationManager": "4.4.0"
+        },
+        "compile": {
+          "lib/netcoreapp2.1/FluentAssertions.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp2.1/FluentAssertions.dll": {}
+        }
+      },
       "Logging/1.0.0.133": {
         "type": "package",
         "dependencies": {
@@ -1046,7 +1070,7 @@
           "System.Security.Permissions": "4.7.0"
         },
         "compile": {
-          "ref/netstandard2.0/_._": {}
+          "ref/netstandard2.0/System.Configuration.ConfigurationManager.dll": {}
         },
         "runtime": {
           "lib/netstandard2.0/System.Configuration.ConfigurationManager.dll": {}
@@ -1701,7 +1725,7 @@
           "System.Security.Principal.Windows": "4.7.0"
         },
         "compile": {
-          "ref/netstandard2.0/_._": {}
+          "ref/netstandard2.0/System.Security.AccessControl.dll": {}
         },
         "runtime": {
           "lib/netstandard2.0/System.Security.AccessControl.dll": {}
@@ -1768,7 +1792,7 @@
           "System.Windows.Extensions": "4.7.0"
         },
         "compile": {
-          "ref/netcoreapp3.0/_._": {}
+          "ref/netcoreapp3.0/System.Security.Permissions.dll": {}
         },
         "runtime": {
           "lib/netcoreapp3.0/System.Security.Permissions.dll": {}
@@ -1777,7 +1801,7 @@
       "System.Security.Principal.Windows/4.7.0": {
         "type": "package",
         "compile": {
-          "ref/netcoreapp3.0/_._": {}
+          "ref/netcoreapp3.0/System.Security.Principal.Windows.dll": {}
         },
         "runtime": {
           "lib/netstandard2.0/System.Security.Principal.Windows.dll": {}
@@ -1936,7 +1960,7 @@
           "System.Drawing.Common": "4.7.0"
         },
         "compile": {
-          "ref/netcoreapp3.0/_._": {}
+          "ref/netcoreapp3.0/System.Windows.Extensions.dll": {}
         },
         "runtime": {
           "lib/netcoreapp3.0/System.Windows.Extensions.dll": {}
@@ -2166,6 +2190,26 @@
           "build/netcoreapp2.1/xunit.runner.visualstudio.props": {}
         }
       },
+      "EmailTemplate.Api/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "EmailTemplate.BLL": "1.0.0",
+          "EmailTemplate.DAL": "1.0.0",
+          "EmailTemplate.Infrastructure": "1.0.0",
+          "Microsoft.EntityFrameworkCore": "5.0.1",
+          "Microsoft.EntityFrameworkCore.SqlServer": "5.0.1"
+        },
+        "compile": {
+          "bin/placeholder/EmailTemplate.Api.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/EmailTemplate.Api.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
       "EmailTemplate.BLL/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
@@ -2256,6 +2300,64 @@
         "lib/netstandard1.5/Castle.Core.dll",
         "lib/netstandard1.5/Castle.Core.xml",
         "readme.txt"
+      ]
+    },
+    "FakeItEasy/6.2.1": {
+      "sha512": "P59iQmxR4Ms9kizyWUQ39i7PASmecjogdEGB/5MO/kZhj48bytSrJ1NAnbWJolpXMA5nOOadXRypWi62kkyfaQ==",
+      "type": "package",
+      "path": "fakeiteasy/6.2.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "fakeiteasy.6.2.1.nupkg.sha512",
+        "fakeiteasy.nuspec",
+        "images/FakeItEasy.png",
+        "lib/net40/FakeItEasy.dll",
+        "lib/net40/FakeItEasy.xml",
+        "lib/net45/FakeItEasy.dll",
+        "lib/net45/FakeItEasy.xml",
+        "lib/netstandard1.6/FakeItEasy.dll",
+        "lib/netstandard1.6/FakeItEasy.xml",
+        "lib/netstandard2.0/FakeItEasy.dll",
+        "lib/netstandard2.0/FakeItEasy.xml",
+        "lib/netstandard2.1/FakeItEasy.dll",
+        "lib/netstandard2.1/FakeItEasy.xml"
+      ]
+    },
+    "FluentAssertions/5.10.3": {
+      "sha512": "gVPEVp1hLVqcv+7Q2wiDf7kqCNn7+bQcQ0jbJ2mcRT6CeRoZl1tNkqvzSIhvekyldDptk77j1b03MXTTRIqqpg==",
+      "type": "package",
+      "path": "fluentassertions/5.10.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "FluentAssertions.png",
+        "fluentassertions.5.10.3.nupkg.sha512",
+        "fluentassertions.nuspec",
+        "lib/net45/FluentAssertions.dll",
+        "lib/net45/FluentAssertions.pdb",
+        "lib/net45/FluentAssertions.xml",
+        "lib/net47/FluentAssertions.dll",
+        "lib/net47/FluentAssertions.pdb",
+        "lib/net47/FluentAssertions.xml",
+        "lib/netcoreapp2.0/FluentAssertions.dll",
+        "lib/netcoreapp2.0/FluentAssertions.pdb",
+        "lib/netcoreapp2.0/FluentAssertions.xml",
+        "lib/netcoreapp2.1/FluentAssertions.dll",
+        "lib/netcoreapp2.1/FluentAssertions.pdb",
+        "lib/netcoreapp2.1/FluentAssertions.xml",
+        "lib/netstandard1.3/FluentAssertions.dll",
+        "lib/netstandard1.3/FluentAssertions.pdb",
+        "lib/netstandard1.3/FluentAssertions.xml",
+        "lib/netstandard1.6/FluentAssertions.dll",
+        "lib/netstandard1.6/FluentAssertions.pdb",
+        "lib/netstandard1.6/FluentAssertions.xml",
+        "lib/netstandard2.0/FluentAssertions.dll",
+        "lib/netstandard2.0/FluentAssertions.pdb",
+        "lib/netstandard2.0/FluentAssertions.xml",
+        "lib/netstandard2.1/FluentAssertions.dll",
+        "lib/netstandard2.1/FluentAssertions.pdb",
+        "lib/netstandard2.1/FluentAssertions.xml"
       ]
     },
     "Logging/1.0.0.133": {
@@ -7631,6 +7733,11 @@
         "xunit.runner.visualstudio.nuspec"
       ]
     },
+    "EmailTemplate.Api/1.0.0": {
+      "type": "project",
+      "path": "../EmailTemplate.Api/EmailTemplate.Api.csproj",
+      "msbuildProject": "../EmailTemplate.Api/EmailTemplate.Api.csproj"
+    },
     "EmailTemplate.BLL/1.0.0": {
       "type": "project",
       "path": "../EmailTemplate.BLL/EmailTemplate.BLL.csproj",
@@ -7649,9 +7756,13 @@
   },
   "projectFileDependencyGroups": {
     "net5.0": [
+      "EmailTemplate.Api >= 1.0.0",
       "EmailTemplate.BLL >= 1.0.0",
       "EmailTemplate.DAL >= 1.0.0",
       "EmailTemplate.Infrastructure >= 1.0.0",
+      "FakeItEasy >= 6.2.1",
+      "FluentAssertions >= 5.10.3",
+      "MediatR >= 9.0.0",
       "Microsoft.EntityFrameworkCore >= 5.0.1",
       "Microsoft.EntityFrameworkCore.InMemory >= 5.0.1",
       "Microsoft.NET.Test.Sdk >= 16.5.0",
@@ -7696,6 +7807,9 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
+            "C:\\Users\\bjar00\\source\\repos\\EmailTemplate\\EmailTemplate.Api\\EmailTemplate.Api.csproj": {
+              "projectPath": "C:\\Users\\bjar00\\source\\repos\\EmailTemplate\\EmailTemplate.Api\\EmailTemplate.Api.csproj"
+            },
             "C:\\Users\\bjar00\\source\\repos\\EmailTemplate\\EmailTemplate.BLL\\EmailTemplate.BLL.csproj": {
               "projectPath": "C:\\Users\\bjar00\\source\\repos\\EmailTemplate\\EmailTemplate.BLL\\EmailTemplate.BLL.csproj"
             },
@@ -7718,6 +7832,18 @@
       "net5.0": {
         "targetAlias": "net5.0",
         "dependencies": {
+          "FakeItEasy": {
+            "target": "Package",
+            "version": "[6.2.1, )"
+          },
+          "FluentAssertions": {
+            "target": "Package",
+            "version": "[5.10.3, )"
+          },
+          "MediatR": {
+            "target": "Package",
+            "version": "[9.0.0, )"
+          },
           "Microsoft.EntityFrameworkCore": {
             "target": "Package",
             "version": "[5.0.1, )"
@@ -7764,6 +7890,9 @@
         "assetTargetFallback": true,
         "warn": true,
         "frameworkReferences": {
+          "Microsoft.AspNetCore.App": {
+            "privateAssets": "none"
+          },
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
           }

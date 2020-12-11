@@ -9,9 +9,9 @@ namespace EmailTemplate.DAL.DTO
 {
     public class TemplateDTO
     {
-        public int Id { get; set; }
-        public string Subject { get; set; }
-        public string Body { get; set; }
+        public int Id { get; private set; }
+        public string Subject { get; private set; }
+        public string Body { get; private set; }
 
         public static TemplateDTO Create(Template template)
         {

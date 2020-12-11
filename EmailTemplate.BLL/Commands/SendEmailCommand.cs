@@ -5,10 +5,12 @@ namespace EmailTemplate.BLL.Commands
 {
     public class SendEmailCommand
     {
+        [Required]
         public int TemplateId { get; set; }
-
+        [Required]
         [EmailAddressAttribute]
-        public string EmailAddress { get; set; }
+        public string Email { get; set; }
+        [Required]
         public string Name { get; set; }
     }
 }

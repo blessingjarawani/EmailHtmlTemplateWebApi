@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace EmailTemplate.Infrastructure.DTO
 {
-    public class EmailDTO
+   public class EmailDTO
     {
         public string To { get; set; }
         public string From { get; set; }

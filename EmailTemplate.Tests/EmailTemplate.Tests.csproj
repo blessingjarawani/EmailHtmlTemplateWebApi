@@ -7,6 +7,9 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="FakeItEasy" Version="6.2.1" />
+    <PackageReference Include="FluentAssertions" Version="5.10.3" />
+    <PackageReference Include="MediatR" Version="9.0.0" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="5.0.1" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="5.0.1" />
     <PackageReference Include="Moq" Version="4.15.2" />
@@ -21,6 +24,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\EmailTemplate.Api\EmailTemplate.Api.csproj" />
     <ProjectReference Include="..\EmailTemplate.BLL\EmailTemplate.BLL.csproj" />
     <ProjectReference Include="..\EmailTemplate.DAL\EmailTemplate.DAL.csproj" />
     <ProjectReference Include="..\EmailTemplate.Infrastructure\EmailTemplate.Infrastructure.csproj" />

@@ -1,11 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "ca5aeXhszSIbe6sTJV6/+7d2z1mtpXj56+j/1FG7CBMTEN6vSUuXGQiNKs19t5tky412dAi+pKb9OTLcJPzACQ==",
+  "dgSpecHash": "LdinUyQooX0R5ac31RN4Mz/8b4bw7RnUc+5e1JqRtuv1CNVELxiRXutizNECIJuH13BZs6MX1rPHO3+Weu7ZaA==",
   "success": true,
   "projectFilePath": "C:\\Users\\bjar00\\source\\repos\\EmailTemplate\\EmailTemplate.Tests\\EmailTemplate.Tests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\bjar00\\.nuget\\packages\\automapper\\4.2.1\\automapper.4.2.1.nupkg.sha512",
     "C:\\Users\\bjar00\\.nuget\\packages\\castle.core\\4.4.0\\castle.core.4.4.0.nupkg.sha512",
+    "C:\\Users\\bjar00\\.nuget\\packages\\fakeiteasy\\6.2.1\\fakeiteasy.6.2.1.nupkg.sha512",
+    "C:\\Users\\bjar00\\.nuget\\packages\\fluentassertions\\5.10.3\\fluentassertions.5.10.3.nupkg.sha512",
     "C:\\Users\\bjar00\\.nuget\\packages\\logging\\1.0.0.133\\logging.1.0.0.133.nupkg.sha512",
     "C:\\Users\\bjar00\\.nuget\\packages\\mediatr\\9.0.0\\mediatr.9.0.0.nupkg.sha512",
     "C:\\Users\\bjar00\\.nuget\\packages\\mediatr.extensions.microsoft.dependencyinjection\\9.0.0\\mediatr.extensions.microsoft.dependencyinjection.9.0.0.nupkg.sha512",
