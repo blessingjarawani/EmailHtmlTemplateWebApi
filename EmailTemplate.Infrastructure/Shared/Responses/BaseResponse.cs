@@ -8,6 +8,7 @@ namespace EmailTemplate.Infrastructure.Shared.Responses
 {
     public class BaseResponse : IBaseResponse
     {
+        public BaseResponse() { }
         public bool IsSuccess { get; }
 
         public string Message { get; }

@@ -26,7 +26,8 @@
           "net5.0"
         ],
         "sources": {
-          "C:\\Users\\bjar00\\source\\repos\\EmailTemplate\\EmailTemplate.Api\\bin\\Debug": {}
+          "C:\\Users\\bjar00\\source\\repos\\EmailTemplate\\EmailTemplate.Api\\bin\\Debug": {},
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net5.0": {

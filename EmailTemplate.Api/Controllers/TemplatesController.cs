@@ -26,11 +26,11 @@ namespace EmailTemplate.Api.Controllers
         public async Task<IBaseResponse> Add([FromBody] AddTemplateCommand query)
              => await _mediator.Send(query);
 
-        [HttpPut("[action]")]
+        [HttpPost("[action]")]
         public async Task<IBaseResponse> Update([FromBody] EditTemplateCommand query)
             => await _mediator.Send(query);
 
-        [HttpDelete("[action]")]
+        [HttpPost("[action]")]
         public async Task<IBaseResponse> Remove([FromBody] DeleteTemplateCommand query)
             => await _mediator.Send(query);
     }

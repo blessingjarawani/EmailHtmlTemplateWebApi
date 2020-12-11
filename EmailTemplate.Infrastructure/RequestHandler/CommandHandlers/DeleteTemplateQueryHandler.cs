@@ -26,7 +26,9 @@ namespace EmailTemplate.Infrastructure.RequestHandler.CommandHandlers
             {
                 if (request == null || !request.IsValid)
                     return BaseResponse.CreateFail("Invalid parameters");
-                var template = _unitOfWork.Template.Delete(request.Id);
+                var template = await _unitOfWork.Template.FindFirst(y=>y.Id == request.Id);
+                if (template != null)
+                    template.IsActive = false;
                 return await _unitOfWork.SaveAsync() ? BaseResponse.CreateSuccess()
                  : BaseResponse.CreateFail("Failed to Delete");
 

@@ -26,7 +26,7 @@ namespace EmailTemplate.Infrastructure.Shared.ProcessesHandler
             {
                 if (request != null && request.TemplateId > 0)
                 {
-                    var template = await _unitOfWork.Template.FindFirst(x => x.Id == request.TemplateId);
+                    var template = await _unitOfWork.Template.FindFirst(x => x.Id == request.TemplateId && x.IsActive);
                     if (template != null)
                     {
                         request.Template = template;

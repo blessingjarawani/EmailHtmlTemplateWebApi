@@ -26,7 +26,7 @@ namespace EmailTemplate.Infrastructure.RequestHandler.CommandHandlers
             {
                 if (request == null || !request.IsValid.HasValue || !request.IsValid.Value)
                     return BaseResponse.CreateFail("Invalid Parameters");
-                var template = new Template { Body = request.Body, Subject = request.Body };
+                var template = new Template { Body = request.Body, Subject = request.Subject };
                 await _unitOfWork.Template.Create(template);
                 return await _unitOfWork.SaveAsync() ? BaseResponse.CreateSuccess()
                      : BaseResponse.CreateFail("Error On saving Template");

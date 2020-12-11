@@ -26,16 +26,16 @@ namespace EmailTemplate.Infrastructure.RequestHandler.Queries
                 IEnumerable<TemplateDTO> result;
                 if (request.Id.HasValue)
                 {
-                    result = (await _unitOfWork.Template.Find(y => y.Id == request.Id.Value))
+                    result = (await _unitOfWork.Template.Find(y => y.Id == request.Id.Value && y.IsActive))
                         ?.Select(x => TemplateDTO.Create(x));
                 }
                 else
                 {
-                    result = (await _unitOfWork.Template.GetAll())?
+                    result = (await _unitOfWork.Template.Find(y=>y.IsActive))?
                         .Select(x => TemplateDTO.Create(x));
                 }
 
-                return !result?.Any() ?? false
+                return result?.Any() ?? false
                     ? Response<IEnumerable<TemplateDTO>>.CreateSuccess(result)
                     : Response<IEnumerable<TemplateDTO>>.CreateFail("No Items Found");
             }
