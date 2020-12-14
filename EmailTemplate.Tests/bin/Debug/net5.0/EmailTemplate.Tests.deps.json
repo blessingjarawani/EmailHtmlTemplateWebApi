@@ -81,7 +81,7 @@
       "Logging/1.0.0.133": {
         "dependencies": {
           "AutoMapper": "4.2.1",
-          "NLog.Config": "4.2.3",
+          "NLog.Config": "4.7.6",
           "Newtonsoft.Json": "12.0.3"
         },
         "runtime": {
@@ -707,13 +707,36 @@
           }
         }
       },
-      "NLog.Config/4.2.3": {
+      "NLog.Config/4.7.6": {
         "dependencies": {
           "NLog": "4.7.6",
-          "NLog.Schema": "4.0.0"
+          "NLog.Schema": "4.7.6"
         }
       },
-      "NLog.Schema/4.0.0": {},
+      "NLog.Extensions.Logging/1.6.4": {
+        "dependencies": {
+          "Microsoft.Extensions.Logging": "5.0.0",
+          "NLog": "4.7.6"
+        },
+        "runtime": {
+          "lib/netcoreapp3.0/NLog.Extensions.Logging.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.6.4.1366"
+          }
+        }
+      },
+      "NLog.Schema/4.7.6": {},
+      "NLog.Web.AspNetCore/4.9.3": {
+        "dependencies": {
+          "NLog.Extensions.Logging": "1.6.4"
+        },
+        "runtime": {
+          "lib/netcoreapp3.0/NLog.Web.AspNetCore.dll": {
+            "assemblyVersion": "4.0.0.0",
+            "fileVersion": "4.9.3.1751"
+          }
+        }
+      },
       "NuGet.Frameworks/5.0.0": {
         "runtime": {
           "lib/netstandard2.0/NuGet.Frameworks.dll": {
@@ -1512,7 +1535,10 @@
           "EmailTemplate.DAL": "1.0.0",
           "EmailTemplate.Infrastructure": "1.0.0",
           "Microsoft.EntityFrameworkCore": "5.0.1",
-          "Microsoft.EntityFrameworkCore.SqlServer": "5.0.1"
+          "Microsoft.EntityFrameworkCore.SqlServer": "5.0.1",
+          "NLog": "4.7.6",
+          "NLog.Config": "4.7.6",
+          "NLog.Web.AspNetCore": "4.9.3"
         },
         "runtime": {
           "EmailTemplate.Api.dll": {}
@@ -1544,7 +1570,8 @@
           "Logging": "1.0.0.133",
           "MediatR": "9.0.0",
           "MediatR.Extensions.Microsoft.DependencyInjection": "9.0.0",
-          "NLog": "4.7.6"
+          "NLog": "4.7.6",
+          "NLog.Config": "4.7.6"
         },
         "runtime": {
           "EmailTemplate.Infrastructure.dll": {}
@@ -1873,19 +1900,33 @@
       "path": "nlog/4.7.6",
       "hashPath": "nlog.4.7.6.nupkg.sha512"
     },
-    "NLog.Config/4.2.3": {
+    "NLog.Config/4.7.6": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-bUGRDC3edzb5lI/PNK9ohcDBpJEq1p7cDFDxvU8leOfIGQdTtzRQDHtOjQWvNPv8VUsVgpA9JLpxZ/yxwXenVw==",
-      "path": "nlog.config/4.2.3",
-      "hashPath": "nlog.config.4.2.3.nupkg.sha512"
+      "sha512": "sha512-4rrKtrgMZ4w9dyk/5aVISyGsfdcd+STumZONKouJFlJ3cvWLhw5cLe7QpqE/8SwW4E5Lr3xCqJA9e5QPCVMZNw==",
+      "path": "nlog.config/4.7.6",
+      "hashPath": "nlog.config.4.7.6.nupkg.sha512"
     },
-    "NLog.Schema/4.0.0": {
+    "NLog.Extensions.Logging/1.6.4": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-VjTrNV2IucJ5K1GewMq8xZ8omVfROpSJSNqBweI0f3Hoy3LyeHCDo4ejw3fGRo2a4TJfpr6E9cU5E4tRLS4OAA==",
-      "path": "nlog.schema/4.0.0",
-      "hashPath": "nlog.schema.4.0.0.nupkg.sha512"
+      "sha512": "sha512-ESOBd/bzxFacwpWTdTXaAaItJz/0Mzibyw65YB0uQT4pf2hXtwHp2626qEiVOmaacIQbJH5wGpBLNcVpbQLpKA==",
+      "path": "nlog.extensions.logging/1.6.4",
+      "hashPath": "nlog.extensions.logging.1.6.4.nupkg.sha512"
+    },
+    "NLog.Schema/4.7.6": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-wHlakqgco/grSxtY6g2kq0o3QMmpTXgV6kBGXn9CkYxOzoVxMQkB/p5ZoayjOBvWbOUsWqpppo0ETaa/nysg2Q==",
+      "path": "nlog.schema/4.7.6",
+      "hashPath": "nlog.schema.4.7.6.nupkg.sha512"
+    },
+    "NLog.Web.AspNetCore/4.9.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-v3TiGaFXENM3/fVCFJJaien7A44EcGwceySh5rFNkp5RC3PZvsbDjEXoOeqsDz8+i5iuYQDMjTFuD2JReNdj9g==",
+      "path": "nlog.web.aspnetcore/4.9.3",
+      "hashPath": "nlog.web.aspnetcore.4.9.3.nupkg.sha512"
     },
     "NuGet.Frameworks/5.0.0": {
       "type": "package",

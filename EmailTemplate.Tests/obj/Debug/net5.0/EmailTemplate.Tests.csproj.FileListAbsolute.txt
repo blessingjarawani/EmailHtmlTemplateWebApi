@@ -153,3 +153,6 @@ C:\Users\bjar00\source\repos\EmailTemplate\EmailTemplate.Tests\bin\Debug\net5.0\
 C:\Users\bjar00\source\repos\EmailTemplate\EmailTemplate.Tests\bin\Debug\net5.0\FluentAssertions.dll
 C:\Users\bjar00\source\repos\EmailTemplate\EmailTemplate.Tests\bin\Debug\net5.0\EmailTemplate.Api.dll
 C:\Users\bjar00\source\repos\EmailTemplate\EmailTemplate.Tests\bin\Debug\net5.0\EmailTemplate.Api.pdb
+C:\Users\bjar00\source\repos\EmailTemplate\EmailTemplate.Tests\bin\Debug\net5.0\NLog.config
+C:\Users\bjar00\source\repos\EmailTemplate\EmailTemplate.Tests\bin\Debug\net5.0\NLog.Extensions.Logging.dll
+C:\Users\bjar00\source\repos\EmailTemplate\EmailTemplate.Tests\bin\Debug\net5.0\NLog.Web.AspNetCore.dll

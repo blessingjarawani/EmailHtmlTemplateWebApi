@@ -42,7 +42,7 @@ namespace EmailTemplate.BLL.Client
             return handler;
         }
 
-        private async Task<BaseResponse> StartProcess(BaseProcessHandler<IContext> handler, IContext emailContext)
+        public async Task<BaseResponse> StartProcess(BaseProcessHandler<IContext> handler, IContext emailContext)
         {
             try
             {

@@ -8,5 +8,6 @@ namespace EmailTemplate.BLL.Client.Abstracts
     public interface IEmailClient
     {
         Task<BaseResponse> Execute(IContext emailContext);
+        Task<BaseResponse> StartProcess(BaseProcessHandler<IContext> handler, IContext emailContext);
     }
 }

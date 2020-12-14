@@ -4,6 +4,10 @@ namespace EmailTemplate.Infrastructure.Shared.Responses
     public class Response<T> : BaseResponse, IResponse<T>
     {
         public T Result { get; }
+        public Response()
+        {
+
+        }
         private Response(T result, bool isSuccess, string message = null) : base(isSuccess, message)
         {
             Result = result;
